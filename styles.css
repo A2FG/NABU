@@ -1,0 +1,54 @@
+:root {
+    --sand-light: #F4E4C1;
+    --bronze-deep: #B8860B;
+    --stone-fark: #1A1A1A;
+    --gold-accent: #DAA520;
+    --charcoal: #2C2C2C;
+}
+
+/*-----------------------------------------------*/
+
+.navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 1rem 2rem;
+    background: rgba(26, 26, 26, 0.95);
+    border-bottom: 1px solid var(--bronze-deep);
+    z-index: 1000;
+    transition: transform 0.4s ease;
+}
+
+.logo {
+    color: var(--gold-accent);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var();
+    text-decoration: none;
+    transition: 0.3;
+}
+
+.nav-links a:hover {
+    color: var(--gold-accent);
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0; height: 1px;
+    background: var(--gold-accent);
+    transition: width 0.3;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
